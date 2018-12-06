@@ -1,7 +1,29 @@
 body {
-  background: gray;
+    background: #000000;
+    color: rgb(236, 236, 236);
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
+}
+
+#arena {
+    position : relative;
+    /*top : -50px;*/
+}
+
+#arena .border-bottom {
+    border-bottom-width: 3px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: #00ffff !important;
+}
+
+/*#buttn {*/
+    /*position: relative;*/
+    /*top: 20px;*/
+    /*left: 10%;*/
+/*}*/
+
+img {
+    width: 800px;
 }
