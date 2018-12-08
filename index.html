@@ -10,33 +10,45 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-
     </head>
-
     <body>
-        <div class="container text-center mt-5">
-            <div class="col">
-                <h4 class="card-title">Pattern 50</h4>
-                <p class="card-text mx-2">Shoot all light targets first, than round the <span style="color: #ff0000;">Rundown barrel</span>. </p>
-                <!--, round the <span style="color: #007bff" >random barrel</span>-->
-                <p class="card-text mx-2" class="text-muted"><small>The way to ride the pattern is a suggestion. The <span style="color: #00b200;">'CROSS'</span>  and <span style="color: #b70000;">'STRAIGHT' </span>remarks do refer to a right hand shooter.</small></p>
+        <!--header section-->
+        <section id="header">
+            <div class="darkOverlay">
+                <div class="row">
+                    <div class="col">
+                        <div class="container mt-4 mt-md-5">
+                            <h1>CMSA Pattern</h1>
+                            <p>All CMSA pattern, with a different view, like up from the air, for a better understanding with an animated way how to ride and shoot the pattern!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <br>
-        <div id="arena" class="container">
-            <img id="pic" src="img/050/050pattern.png" alt="Pattern 50">
-        </div>
-        <div id="buttn" class="container text-center mt-3">
-            <button type="button" class="btn btn-outline-info btn-sm" id="btn1">Pattern Setup</button>
-            <button type="button" class="btn btn-outline-info btn-sm" id="btn2">How To Run</button>
-            <button type="button" class="btn btn-outline-info btn-sm" id="btn3">How To Shoot</button>
-        </div>
-
-
+        </section>
+        <!--input section-->
+        <section id="form">
+            <div class="container text-center mt-3">
+                <div class="row">
+                <div class="col"> </div>
+                <form action="">
+                    <div class="form-group col">
+                        <label for="pattrnNum">Pattern Number</label>
+                        <input type="text" id="pattrnNum" class="form-control d-inline" name="pattern_num" value="" placeholder="Pattern Number">
+                        <small class="form-text text-muted">Please type in, the number for the pattern50 you want to see</small>
+                        <button id="goBtn" class="mt-3 btn btn-outline-warning btn-sm" type="button">See The Pattern</button>
+                    </div>
+                </form>
+                <div class="col"> </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="darkOverlay">
+            </div>
+        </section>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
-
