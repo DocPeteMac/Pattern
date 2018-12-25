@@ -1,12 +1,16 @@
-// pattern50 number from input
+document.querySelector('#goBtn').addEventListener('click', function(e) {
+    console.log(e);
+});
+// take pattern number from input
 let go = document.querySelector('#goBtn');
 go.addEventListener('click', patternNumber);
 
+var pNum;
 function patternNumber(){
-    let patternNum = document.querySelector('#pattrnNum').value;
-    if (patternNum < 49 && patternNum > 50){
-        alert("The pattern " + patternNum + " is not available yet");
+    pNum = document.querySelector('#pattrnNum').value;
+    if (pNum > 86 || pNum < 1){
+        alert("The pattern #" + pNum + " is not available");
     }else{
-        window.location = '0' + patternNum + '.html';
+        window.location = '0' + pNum + '.html';
     }
 }
