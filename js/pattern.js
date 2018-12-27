@@ -45,5 +45,5 @@ let way_1 = document.querySelector('#patrn1');
 way_1.addEventListener('click', way1);
 
 function way1 () {
-    window.location = '010-1.html';
+    window.location = '0' + num + '-1.html#arena';
 }
