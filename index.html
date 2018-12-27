@@ -14,61 +14,68 @@
     <body class="home">
         <!--header section-->
         <section id="header">
-            <div class="darkOverlay">
+            <div class="container mt-4 mt-md-5">
                 <div class="row">
                     <div class="col">
-                        <div class="container mt-4 mt-md-5">
                             <h1>CMSA Pattern</h1>
                             <p>All CMSA pattern, with a different view, like up from the air, for a better understanding with an animated way how to ride and shoot the pattern!</p>
                         </div>
                         <br>
-                        <!--input section-->
-                        <section id="form">
-                            <div class="container text-center mt-3">
-                                <div class="row">
-                                    <div class="col"></div>
-                                    <form id="forPattern">
-                                        <div class="form-group col">
-                                            <label for="pattrnNum">Pattern Number</label>
-                                            <input type="text" id="pattrnNum" class="form-control d-inline" name="pattrnNum" placeholder="Pattern Number">
-                                            <small class="form-text text-muted">Please type in, the number for the pattern you want to see</small>
-                                            <button id="goBtn" name="goBtn" class="mt-3 btn btn-outline-warning btn-sm" type="button">See The Pattern</button>
-                                        </div>
-                                    </form>
-                                    <div class="col"></div>
-                                    <br>
-                                    <div class="container">
-                                        <div style="color: rgba(255,0,0,0.51);">
-                                            <h5> For now only the listed pattern below available for </h5>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <ul>
-                                                        <li>#3</li>
-                                                        <li>#4</li>
-                                                        <li>#6</li>
-                                                        <li>#7</li>
-                                                        <li>#49</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-6">
-                                                    <ul>
-                                                        <li>#50</li>
-                                                        <li>#63</li>
-                                                        <li>#76</li>
-                                                        <li>#85</li>
-                                                        <li>#86</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                     </div>
+                </div>
+        </section>
+        <!--input section-->
+        <section id="form">
+            <div class="container text-center mt-3">
+                <div class="row">
+                    <div class="col"></div>
+                    <form id="forPattern" class="col-centered">
+                        <div class="form-group col">
+                            <label for="pattrnNum">Pattern Number</label>
+                            <input type="text" id="pattrnNum" class="form-control d-inline" name="pattrnNum" placeholder="Pattern Number">
+                            <small class="form-text text-muted">Please type in, the number for the pattern you want to see</small>
+                            <button id="goBtn" name="goBtn" onclick="patternNumber()" class="mt-3 btn btn-outline-warning btn-sm" type="button">See The Pattern</button>
+                        </div>
+                    </form>
+                    <div class="col"></div>
+                    <br>
                 </div>
             </div>
         </section>
+        <div class="container">
+            <div style="color: rgba(255,0,0,0.51);">
+                <h5> For now only the pattern, listed below, are available:</h5>
+                <div class="row col-centered">
+                    <div class="col-4">
+                        <ul>
+                            <li>#3</li>
+                            <li>#4</li>
+                            <li>#6</li>
+                            <li>#7</li>
+                            <li>#8</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul>
+                            <li>#9</li>
+                            <li>#10</li>
+                            <li>#22</li>
+                            <li>#23</li>
+                            <li>#49</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul>
+                            <li>#50</li>
+                            <li>#63</li>
+                            <li>#76</li>
+                            <li>#85</li>
+                            <li>#86</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
