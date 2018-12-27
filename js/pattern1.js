@@ -5,7 +5,7 @@ let num = patNum.innerHTML;
 let start = document.querySelector('#btn1');
 start.addEventListener('click', function(){
     let img = document.querySelector('#pic');
-    img.src = "img/0" + num + "/0" + num + "pattern.png";
+    img.src = "img/0" + num + "/0" + num + "pattern1.png";
 });
 
 // start.addEventListener('click', startEvent);
@@ -20,7 +20,7 @@ pattern.addEventListener('click', patternEvent);
 
 function patternEvent() {
     let img = document.querySelector('#pic');
-    img.src = "img/0" + num + "/0" + num + "path.png";
+    img.src = "img/0" + num + "/0" + num + "path1.png";
 }
 
 // Button 3 = How to shoot
@@ -29,7 +29,7 @@ shoot.addEventListener('click', shootEvent);
 
 function shootEvent(){
     let img = document.querySelector('#pic');
-    img.src = "img/0" + num + "/0" + num + ".gif";
+    img.src = "img/0" + num + "/0" + num + "-1.gif";
 }
 
 // Button 4 = birds eye
@@ -41,9 +41,9 @@ function birdsEye(){
     img.src = "img/0" + num + "/0" + num + "cb.png";
 }
 
-let way_1 = document.querySelector('#patrn1');
-way_1.addEventListener('click', way1);
+let way_2 = document.querySelector('#patrn2');
+way_2.addEventListener('click', way2);
 
-function way1 () {
-    window.location = '010-1.html';
+function way2 () {
+    window.location = '010.html';
 }
