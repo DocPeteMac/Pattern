@@ -12,6 +12,26 @@ body {
     text-align: center;
 }
 
+
+.colorchange {
+    -webkit-animation: orangeyellow 4s infinite alternate;
+}
+
+@-webkit-keyframes orangeyellow {
+    0% {
+        color: yellow;
+    }
+    33% {
+        color: orange;
+    }
+    66% {
+        color: yellow;
+    }
+    100% {
+        color: orange;
+    }
+}
+
 #header {
     position: relative;
     /*min-height: 700px;*/
@@ -25,7 +45,10 @@ body {
     color: #fff5bf;
     z-index: -10;
 }
-
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
 .btn {
     font-weight: 500;
     font-size: .700rem;
